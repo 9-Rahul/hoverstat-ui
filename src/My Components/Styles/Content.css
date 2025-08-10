@@ -1,0 +1,85 @@
+.content {
+    /* background-color: red; */
+    padding: 20px 5px;
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 70px);
+    max-width: calc(33.33% - 70px);
+    background-color: transparent;
+    color: #F1F1F1;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.vid-container video {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.vid-container video:hover {
+    cursor: pointer;
+}
+
+.vid-text {
+    margin-top: 6px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.paraP-2 {
+    margin-top: 3px;
+    color: purple !important;
+}
+
+.paraP-2:hover {
+    cursor: pointer;
+}
+
+.vid-text h5 {
+    font-weight: 300;
+}
+
+.btm-txt {
+    /* background-color: yellow; */
+    margin-top: 5px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .card {
+        flex: 1 1 calc(50% - 24px);
+        max-width: calc(50% - 24px);
+    }
+}
+
+
+@media screen and (max-width: 745px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .card-container {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 499px) {}

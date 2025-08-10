@@ -1,7 +1,8 @@
 .header {
     width: 100%;
-    /* background-color: red; */
-    position: fixed;
+    /* background-color: yellow; */
+    position: sticky;
+    top: 0;
     z-index: 999;
 }
 
@@ -19,13 +20,15 @@
 }
 
 .header div button {
+    min-width: 1.5em;
     background-color: black;
     border-radius: 10em;
     color: #f4f4f4;
-    font-size: 1.33rem;
+    font-size: 1.25rem;
     letter-spacing: .04em;
-    padding: .4em .8em .2em;
+    padding: 0.4em 0.8em 0.2em;
     border: none;
+    text-transform: uppercase;
 }
 
 header div button:hover {
@@ -37,18 +40,29 @@ header div button:hover {
 @media screen and (max-width: 768px) {
     .header div button {
         font-size: 1rem;
+        letter-spacing: .04em;
     }
 }
 
 @media screen and (max-width: 499px) {
     .header {
-        padding: 10px .75rem;
+        padding: 0px;
     }
 
+    .btns-container {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
 
     .header div button {
         font-size: 14px;
-        letter-spacing: .024em;
     }
 
+}
+
+@media screen and (max-width: 375px) {
+
+    .btns-container {
+        gap: 2px;
+    }
 }

@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <section className="banner">
             <div className="vid-and-text-container">
-                <div className="vid-container">
+                <div className="video-container">
                     <div className="vid-header">
                         <div className="threedots">
                             <span></span>
@@ -22,10 +22,10 @@ const Banner = () => {
                 <div className="text-container">
                     <h5>19 Feb 2025</h5>
                     <p className="paraP" >theaterimdepot.de</p>
-                    <p>An interesting take on staging for the landing page of the Theater im Depot,
+                    <p className='paraP-two'>An interesting take on staging for the landing page of the Theater im Depot,
                         with the website presenting a window to the content inside a larger menu setting. by</p>
                     <h5 className="bottom-text"><span>Credits → </span>
-                        <span>Liebermann Kiepe Reddemann</span>
+                        <span>Credits → Liebermann Kiepe Reddemann</span>
                         <span> & Ten Ten Team</span>
                     </h5>
                 </div>
