@@ -212,7 +212,9 @@ const Content = () => {
                     </div>
                 </div>
 
-
+                <div className="content-footer">
+                    <button className="ftr-btns">Browse Archive</button>
+                </div>
             </div>
         </section>
     )
